@@ -165,11 +165,15 @@ button:active {
 
 /* Contenido del modal */
 .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80%;
+    margin: auto; /* Centra horizontalmente */
+    display: block; /* Mostrar el contenido */
+    max-width: 90%; /* Ancho máximo */
+    max-height: 80%; /* Alto máximo */
     transition: transform 0.3s ease; /* Efecto de zoom */
+    position: absolute; /* Cambiado a absoluto para centrar en la pantalla */
+    top: 50%; /* Desde la parte superior */
+    left: 50%; /* Desde la izquierda */
+    transform: translate(-50%, -50%); /* Centrar el contenido */
 }
 
 /* Texto del pie de foto */

@@ -83,7 +83,6 @@ images.forEach((image) => {
     image.onclick = function() {
         modal.style.display = "block"; // Muestra el modal
         modalImage.src = this.src; // Establece la fuente de la imagen del modal
-        captionText.innerHTML = this.alt; // Establece el texto del pie de foto
     }
 });
 
