@@ -195,3 +195,44 @@ button:active {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* ------------------------------------------------- */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#entrarbtn {
+    width: 100%;
+}

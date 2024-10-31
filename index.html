@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baúl de los Recuerdos</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fade-in-title" id="title">
-        <h1>Una vida junto a ti</h1>
-    </div>
-    <div class="menu" id="menu">
-        <button class="btnRecuerdos" onclick="window.location.href='baul.html'">Recuerdos</button>
-        <button onclick="window.location.href='razones.html'">Razones por las que te amo</button>
-        <!-- Aquí podrás añadir otros botones para opciones futuras -->
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit" id="entrarbtn">Entrar</button>
+        </form>
+        <div id="errorMessage" class="error-message" style="display: none;">Credenciales incorrectas</div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
