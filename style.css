@@ -73,15 +73,15 @@ button:active {
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor */
     box-shadow: none;
-    transform: scale(0.10); /* Escala inicial */
+    transform: scale(0.15); /* Escala inicial */
     position: absolute; /* Posicionamiento absoluto */
-    bottom: -160px; /* Distancia desde el fondo */
-    left: -160px; /* Distancia desde la izquierda */
+    bottom: -300px; /* Distancia desde el fondo */
+    left: -300px; /* Distancia desde la izquierda */
     transition: transform 0.3s; /* Transición suave */
 }
 
 #recBack:hover {
-    transform: scale(0.12); /* Escala al pasar el mouse */
+    transform: scale(0.17); /* Escala al pasar el mouse */
 }
 
 
@@ -133,6 +133,7 @@ button:active {
     align-items: center;
     justify-content: center;
     margin: 0; /* Elimina el margen externo */
+    transition: transform 0.5s; 
 }
 
 
@@ -235,4 +236,38 @@ button:hover {
 
 #entrarbtn {
     width: 100%;
+}
+
+
+/* --------------------------------------- */
+
+#fechae1 {
+    position: absolute; /* Cambia a absolute para posicionar en la esquina */
+    top: 20%; /* Alinea al borde superior */
+    left: 20%; /* Alinea al borde izquierdo */
+    display: flex; /* Flexbox para alinear elementos internos, si es necesario */
+    width: auto; /* Auto para que se ajuste al contenido */
+    height: auto; /* Auto para que se ajuste al contenido */
+    font-size: 20px; /* Escala el tamaño de la fuente según el ancho de la ventana */
+    margin: 10px; /* Un pequeño margen para que no esté pegado a la esquina */
+}
+
+#parrafoe1 {
+    text-align:justify;
+    position: absolute; /* Cambia a absolute para posicionar en la esquina */
+    top: 30%; /* Alinea al borde superior */
+    left: 20%; /* Alinea al borde izquierdo */
+    display: flex; /* Flexbox para alinear elementos internos, si es necesario */
+    width: auto; /* Auto para que se ajuste al contenido */
+    height: auto; /* Auto para que se ajuste al contenido */
+    font-size: 15px; /* Escala el tamaño de la fuente según el ancho de la ventana */
+    margin: 10px; /* Un pequeño margen para que no esté pegado a la esquina */
+    font-style: italic;
+}
+
+#parrafoe1::after {
+    content:'';
+    display:inline-block;
+    width:100%;
+    vertical-align:top;
 }
