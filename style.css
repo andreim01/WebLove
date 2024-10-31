@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.fade-in-title {
+    text-align: center;
+    font-size: 2em;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.menu {
+    display: none; /* Lo ocultamos hasta que el título desaparezca */
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 15px; /* Espacio entre los botones */
+    align-items: center; /* Centra los botones horizontalmente */
+}
+
+/* Resto de los estilos del botón */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.btnRecuerdos {
+    align-items: center;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#recBack {
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo */
+    color: white; /* Color del texto (si decides usar texto) */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 5px 10px; /* Relleno */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor */
+    box-shadow: none;
+    transform: scale(0.10); /* Escala inicial */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: -160px; /* Distancia desde el fondo */
+    left: -160px; /* Distancia desde la izquierda */
+    transition: transform 0.3s; /* Transición suave */
+}
+
+#recBack:hover {
+    transform: scale(0.12); /* Escala al pasar el mouse */
+}
+
+
+/* Estilo para el texto que aparece y se desvanece */
+.fade-text {
+    position: absolute;
+    color: #ff7f50;
+    font-size: 24px;
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 2s ease-in-out; /* Transición lenta tanto para aparecer como para desaparecer */
+}
+
