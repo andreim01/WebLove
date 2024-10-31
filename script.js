@@ -12,6 +12,26 @@ document.addEventListener("click", function() {
     }, 2000); // tiempo de 2 segundos
 });
 
+document.addEventListener("click", function() {
+    const titleBaul = document.getElementById("titleBaul");
+    const photoContainer = document.getElementById("photoContainer"); // Asegúrate de tener el contenedor de fotos
+
+    // Desvanece el título
+    titleBaul.style.opacity = 0;
+
+    // Espera a que el título se desvanezca antes de ocultarlo y mostrar el contenedor de fotos
+    setTimeout(() => {
+        titleBaul.style.display = "none"; // Oculta el título
+
+        // Muestra el contenedor de fotos
+        photoContainer.style.display = "grid"; // Cambia a grid para mostrar
+        photoContainer.classList.add('show'); // Añade la clase 'show' para la transición
+    }, 2000); // tiempo de 2 segundos para el desvanecimiento del título
+});
+
+
+
+
 // Lista de palabras
 const palabras = [
     "Tu sonrisa", "Tu pelo", "Tus ojos", "Tus labios", "Tu risa",
@@ -50,5 +70,27 @@ function showText(event) {
         text.remove();
     }, 3100);
 }
+
+// Obtén los elementos del modal y las imágenes
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const captionText = document.getElementById("caption");
+const closeModal = document.getElementsByClassName("close")[0];
+
+// Agrega un evento a todas las imágenes para abrir el modal
+const images = document.querySelectorAll(".clickable-image");
+images.forEach((image) => {
+    image.onclick = function() {
+        modal.style.display = "block"; // Muestra el modal
+        modalImage.src = this.src; // Establece la fuente de la imagen del modal
+        captionText.innerHTML = this.alt; // Establece el texto del pie de foto
+    }
+});
+
+// Cuando el usuario hace clic en el botón de cerrar, oculta el modal
+closeModal.onclick = function() {
+    modal.style.display = "none"; // Oculta el modal
+}
+
 
 

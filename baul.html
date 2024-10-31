@@ -5,29 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librito</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-        }
-        
-    </style>
 </head>
 <body>
 
-    <script src="script.js"></script>
-
     <div class="fade-in-title" id="titleBaul">
-        <h1>Junto a ti, mi vida es mas llevadera</h1>
+        <h1>Junto a ti, mi vida es más llevadera</h1>
     </div>
 
+    <!-- Contenedor específico para el contenido de fotos -->
+    <div id="menu" class="content-container">
+        <div class="photo-container" id="photoContainer">
+            <div class="foto-block" id="foto1">
+                <img src="IMG_0691.jpg" class="clickable-image">
+            </div>
+            <div class="foto-block" id="foto2">
+                <img src="IMG_0713.jpg" class="clickable-image">
+            </div>
+            <div class="foto-block" id="foto3">
+                <img src="IMG_0719.jpg" class="clickable-image">
+            </div>
+            <div class="foto-block" id="foto4">
+                <img src="IMG_0703.jpg" class="clickable-image">
+            </div>
+        </div>
+    </div>
 
+    <!-- Modal para mostrar la imagen ampliada -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
+    <button id="recBack" onclick="window.location.href='index.html'">
+        <img src="340.png"/>
+    </button>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
