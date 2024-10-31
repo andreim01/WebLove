@@ -104,12 +104,16 @@ button:active {
 
 /* Contenedor principal */
 .content-container {
+    width: auto;
+    height: auto;
     padding: 20px; /* Espacio alrededor del contenido */
     display: flex;
     justify-content: center;
 }
 
 .photo-container {
+    width: auto;
+    height: auto;
     display: none; /* Oculta el contenedor de fotos completamente */
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 150px; /* Espacio entre los bloques */
@@ -127,8 +131,8 @@ button:active {
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
     border-radius: 10px;
     overflow: hidden;
-    width: 250px; /* Ajusta el tamaño según sea necesario */
-    height: 250px; 
+    width: 25vh; /* Ajusta el tamaño según sea necesario */
+    height: 25vh; 
     display: flex;
     align-items: center;
     justify-content: center;
