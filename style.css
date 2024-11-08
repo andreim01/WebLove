@@ -275,3 +275,9 @@ button:hover {
     width:100%;
     vertical-align:top;
 }
+
+
+#elefantito {
+    transition: transform 0.3s ease;
+    
+}
