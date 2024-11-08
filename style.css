@@ -278,6 +278,8 @@ button:hover {
 
 
 #elefantito {
-    transition: transform 0.3s ease;
+    transform: scale(0.3); /* Escala inicial */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 30%;
     
 }
